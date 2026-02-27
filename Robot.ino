@@ -6,21 +6,7 @@
 
 // Pins
 #define NUM_LEDS 2
-#define PIN_RBGLED 4
-#define PWR_R 5               
-#define PWR_L 6               
-#define MTR_R 8               
-#define MTR_L 7               
-#define SERVO 10              
-#define MTR_ENABLE 3          
-#define US_OUT 13             
-#define US_IN 12              
-
-// Sensors
-#define SENSOR_L A2
-#define SENSOR_M A1
-#define SENSOR_R A0
-#define LINE_THRESHOLD 500
+#define PIN_RBGLED 4             
 
 // Movement Settings
 #define SPEED_LEFT 43     
