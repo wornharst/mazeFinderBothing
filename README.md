@@ -1,2 +1,1 @@
-# mazeFinderBothing
-
+# Maze Finder Bot
