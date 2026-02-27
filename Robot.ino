@@ -1,3 +1,6 @@
+#include "Motors.cpp"
+#include "Sensors.cpp"
+
 #include <FastLED.h>
 #include <Servo.h>
 
@@ -108,7 +111,7 @@ void veerRight() {
   ledOn(CRGB::Green);
 }
 
-// 90 degrees to the right
+// turns 90 degrees to the right
 void turn90() {
   stopMotors();
   ledOn(CRGB::Purple);
@@ -119,17 +122,19 @@ void turn90() {
   analogWrite(PWR_L, SPEED_TURN);
   analogWrite(PWR_R, SPEED_TURN);
   
-  // Triall and error turn time
+  // Trial and error turn time
   delay(TURN_TIME_90); 
   stopMotors();
   ledOn(CRGB::Green);
 }
 
+// stops the robot from moving
 void stopMotors() {
   analogWrite(PWR_L, 0);
   analogWrite(PWR_R, 0);
 }
 
+// returns the distance between the robot and the wall
 int getDistance() {
   digitalWrite(US_OUT, LOW); delayMicroseconds(2);
   digitalWrite(US_OUT, HIGH); delayMicroseconds(10);
@@ -139,6 +144,7 @@ int getDistance() {
   return (d == 0 || d > 200) ? 0 : d;
 }
 
+//sets the led on the robot to a color given by 'color'
 void ledOn(CRGB color) {
   leds[0] = color; 
   leds[1] = color; 
