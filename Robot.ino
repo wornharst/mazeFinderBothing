@@ -1,4 +1,3 @@
-// Pin definitions
 #include "src/Config.h"    
 #include "src/Motors.h" 
 #include "src/Sensors.h"    
@@ -8,16 +7,16 @@
 Servo scanServo;              
 
 void setup() {
+  //pin definitions
   initMotors();     
   initSensors();    
   initLed();
   pinMode(BUTTON_PIN, INPUT_PULLUP); 
   scanServo.attach(SERVO);           
   scanServo.write(90);               
+
   while (digitalRead(BUTTON_PIN) == HIGH); 
-  
   delay(500);
-  
   ledOn(CRGB::Green);
 }
 
