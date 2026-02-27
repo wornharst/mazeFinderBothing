@@ -1,5 +1,6 @@
 #include <Servo.h>
 
+// Pins
 #define PWR_R 5               
 #define PWR_L 6               
 #define MTR_R 8               
