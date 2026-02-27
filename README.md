@@ -1,7 +1,7 @@
 # Maze Finder Bot
 Using c++, we created a Robot that can navigate mazes. 
 
-# build instructions
+# Build Instructions
 
 1. Clone the repository
 git clone https://github.com/wornharst/mazeFinderBothing.git
