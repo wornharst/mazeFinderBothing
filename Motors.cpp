@@ -8,4 +8,7 @@
 #define SERVO 10              
 #define MTR_ENABLE 3   
          
-Servo scanServo;   
+class Motors{
+  public:
+  Servo scanServo;   
+}
