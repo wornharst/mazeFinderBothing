@@ -8,7 +8,7 @@ git clone https://github.com/wornharst/mazeFinderBothing.git
 
 2. Open the Robot.ino file in arduino IDE
    
-3. Upload and Press button on robot. 
+3. Upload and Press button on robot to start it. 
 
 ## Description
 This project is an Arduino based robot designed to navigate tracks using line-following sensors while looking for obstacles. The robot uses a three sensors on the bottom to track paths and do precise 90-degree turns. It features ultrasonic distance sensing to prevent collisions and provides real time visual feedback via RGB LEDs to indicate its current operational state (moving, turning, or stopped).
