@@ -1,7 +1,6 @@
-#include "Motors.cpp"
-#include "Sensors.cpp"
-
-#include <FastLED.h>
+#include "src/Config.h"
+#include "src/Motors.h"
+#include "src/Sensors.h"
 #include <Servo.h>
 
 // Pins
