@@ -27,17 +27,15 @@ This project is an Arduino based robot designed to navigate tracks using line-fo
 
 # Project Structure
 ```
-Calendar/
-├── .vscode/
-│   └── tasks.json             # Automation tasks for building the project
-├── database/
-│   └── calander project.exe   # Main application executable
-├── ui/
-│   ├── SDL3.dll               # Dynamic Link Library required for graphics
-│   ├── userWindow.cpp         # Source code for the UI implementation
-│   └── userWindow.exe         # Executable for UI testing
-├── .gitignore                 # Instructions for Git to ignore binary files
-├── calender_project.cpp       # Main entry point for the application
-└── README.md                  # Project documentation
+RobotProject/
+├── src/
+│   ├── Config.h       # Pin definitions and speed constants
+│   ├── Motors.h       # Declaration of movement functions
+│   ├── Motors.cpp     # Implementation of movement logic
+│   ├── Sensors.h      # Declaration of sensor functions
+│   └── Sensors.cpp    # Implementation of distance/line logic
+├── .gitignore         # Ignore /build or temp files
+├── README.md          # Documentation (The text I wrote first)
+└── Robot.ino          # Main entry (Setup and Loop)
 ```
 
