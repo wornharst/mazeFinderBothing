@@ -13,7 +13,8 @@
 #define SERVO 10              
 #define MTR_ENABLE 3          
 #define US_OUT 13             
-#define US_IN 12              
+#define US_IN 12     
+#define GYRO 0x68           
 
 // Sensors
 #define SENSOR_L A2
