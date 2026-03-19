@@ -8,7 +8,6 @@ float gyroZOffset = 0;
 float currentAngle = 0;       
 unsigned long lastTime = 0; 
 
-Servo scanServo;   
 // Initialize Gyro Sensor
 bool setupGyro() {
   Wire.begin();

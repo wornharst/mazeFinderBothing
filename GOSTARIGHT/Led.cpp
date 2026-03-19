@@ -1,5 +1,4 @@
 #include "Led.h"
-#pragma once
 
 CRGB leds[NUM_LEDS]; 
 

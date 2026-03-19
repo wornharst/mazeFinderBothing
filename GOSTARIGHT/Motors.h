@@ -7,8 +7,7 @@ void initMotors();
 void goStraight();
 void veerLeft();
 void veerRight();
-void turnRight90();
+void turn90();
 void stopMotors();
-void turnLeft90();
 
 #endif

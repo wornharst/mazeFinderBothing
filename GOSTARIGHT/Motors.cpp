@@ -23,10 +23,11 @@ void stopMotors() {
 //  Veer left
 void veerLeft() {
   ledOn(CRGB::Blue);
-  digitalWrite(MTR_L, HIGH); 
+  digitalWrite(MTR_L, LOW); // Make left wheel reverse 
   digitalWrite(MTR_R, HIGH);
   analogWrite(PWR_L, SPEED_LEFT);
-  analogWrite(PWR_R, SPEED_RIGHT + 15); 
+  analogWrite(PWR_R, SPEED_RIGHT); 
+  delay(CORRECTION_TIME);
   ledOn(CRGB::Green);
 }
 
@@ -34,14 +35,15 @@ void veerLeft() {
 void veerRight() {
   ledOn(CRGB::Blue);
   digitalWrite(MTR_L, HIGH);
-  digitalWrite(MTR_R, HIGH); 
-  analogWrite(PWR_L, SPEED_LEFT + 15); 
+  digitalWrite(MTR_R, LOW); // Make right wheel reverse 
+  analogWrite(PWR_L, SPEED_LEFT); 
   analogWrite(PWR_R, SPEED_RIGHT);
+  delay(CORRECTION_TIME);
   ledOn(CRGB::Green);
 }
 
 // turns 90 degrees to the right
-void turnRight90() {
+void turn90() {
   stopMotors();
   ledOn(CRGB::Purple);
   delay(200);
@@ -56,23 +58,3 @@ void turnRight90() {
   stopMotors();
   ledOn(CRGB::Green);
 }
-
-void turnLeft90() {
-  stopMotors();
-  ledOn(CRGB::Purple);
-  delay(200);
-  
-  digitalWrite(MTR_L, HIGH);
-  digitalWrite(MTR_R, LOW);
-  analogWrite(PWR_L, SPEED_TURN);
-  analogWrite(PWR_R, SPEED_TURN);
-  
-  // Trial and error turn time
-  delay(TURN_TIME_90); 
-  stopMotors();
-  ledOn(CRGB::Green);
-}
-
-
-
-
