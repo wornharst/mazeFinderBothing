@@ -6,7 +6,7 @@ Using c++, we created a Robot that can navigate mazes.
 1. Clone the repository
 git clone https://github.com/wornharst/mazeFinderBothing.git
 
-2. Open the Robot.ino file in arduino IDE
+2. Open the any of the files in arduino IDE
    
 3. Upload and Press button on robot to start it. 
 
