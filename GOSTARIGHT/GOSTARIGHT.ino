@@ -67,7 +67,6 @@ void loop() {
       else if (rightOpen) {
         turnRight(NINTY_DEGREES);
         resetAngle();
-        rightTurnCount++; 
       }
       else if (leftOpen) {
         turnLeft(NINTY_DEGREES);
