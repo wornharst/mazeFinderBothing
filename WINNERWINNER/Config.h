@@ -1,0 +1,37 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#include <FastLED.h>
+#include <Wire.h>
+
+// Pins
+#define NUM_LEDS 2
+#define PIN_RBGLED 4
+#define PWR_R 5               
+#define PWR_L 6               
+#define MTR_R 8               
+#define MTR_L 7               
+#define SERVO 10              
+#define MTR_ENABLE 3          
+#define US_OUT 13             
+#define US_IN 12     
+#define GYRO 0x68           
+
+// Sensors
+#define SENSOR_L A2
+#define SENSOR_M A1
+#define SENSOR_R A0
+#define LINE 400 //500
+#define BUTTON_PIN 2
+
+// Movement Settings
+#define SPEED_LEFT 40     
+#define SPEED_RIGHT 37     
+#define SPEED_TURN 70      
+#define NINTY_DEGREES 86 
+#define ONE_EIGHTY_DEGREES 179
+#define DISTANCE_THRESHOLD 5
+#define TURN_TIME_90 1100
+#define CORRECTION_TIME 240
+
+#endif
